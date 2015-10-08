@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FriendsSample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="vk_app_id">4987721</string>
+    <string name="vk_login_prompt">Log in</string>
+    <string name="write_db">Creating friends database</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="age">Age</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"/>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/vk_login_prompt"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:onClick="onSignInClicked"
+        android:background="@drawable/btn_drawable"
+        android:textColor="#fff"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/sort_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/sort_by_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstname"
+            android:onClick="onSortClicked"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_drawable"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:id="@+id/sort_by_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname"
+            android:onClick="onSortClicked"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_drawable"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:id="@+id/sort_by_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:onClick="onSortClicked"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_drawable"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
